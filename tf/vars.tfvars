@@ -1,4 +1,4 @@
 GOOGLE_PROJECT   = "demopj-430611"
 GOOGLE_REGION= "europe-west1"
 GKE_NUM_NODES    = 2
-GKE_MACHINE_TYPE = "g1-small"
+GKE_MACHINE_TYPE = "e2-small"
