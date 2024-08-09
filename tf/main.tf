@@ -28,7 +28,7 @@ module "tls_private_key" {
 
 terraform {
   backend "gcs" {
-    bucket = "ashcherbatyi-demo-1"
+    bucket = var.G_BUCKET_NAME
     prefix = "terraform/state"
   }
 }

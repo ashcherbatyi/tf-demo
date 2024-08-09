@@ -37,3 +37,8 @@ variable "GKE_NUM_NODES" {
   default     = 2
   description = "GKE nodes number"
 }
+
+variable "G_BUCKET_NAME" {
+  type        = string
+  description = "Google bucket name"
+}
