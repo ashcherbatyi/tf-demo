@@ -28,6 +28,18 @@ This configuration uses several Terraform modules to manage different components
    - Source: [tf-hashicorp-tls-keys](https://github.com/ashcherbatyi/tf-hashicorp-tls-keys)
    - This module generates an RSA private key for use with the GitHub repository.
 
+### Before Deploy
+
+Before deploying, you must also create a Google Cloud Storage (GCS) bucket to store the Terraform state file. This is necessary to ensure that your Terraform state is securely stored and can be shared across different environments.
+
+To create a GCS bucket, run the following command in Google Cloud Shell:
+
+```bash
+gsutil mb -p <your-gcp-project-id> -l <your-region> gs://<your-bucket-name>/
+```
+
+Replace `<your-gcp-project-id>`, `<your-region>`, and `<your-bucket-name>` with your actual GCP project ID, the desired region, and the bucket name.
+
 ## Steps to Deploy
 
 1. **Clone the repository**:
