@@ -31,3 +31,9 @@ variable "FLUX_GITHUB_TARGET_PATH" {
   default     = "clusters"
   description = "Flux manifest subdirectory"
 }
+
+variable "GKE_NUM_NODES" {
+  type        = number
+  default     = 2
+  description = "GKE nodes number"
+}
